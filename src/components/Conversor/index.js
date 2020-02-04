@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './Conversor.css';
+
 class Conversor extends Component {
 
     constructor(props) {
@@ -31,11 +33,16 @@ class Conversor extends Component {
 
     render() {
         return(
-            <div className="conversor">
-                <h2>{this.props.moedaA} para {this.props.moedaB}</h2>
-                <input type="text" onChange={(event)=>{this.setState({moedaA_valor:event.target.value})}}></input>
-                <input type="button" value="Converter" onClick={this.converter}></input>
-                <h2>{this.state.moedaB_valor}</h2>
+            <div class="conversor-content">
+                <div className="conversor">
+                    <h2>{this.props.moedaA} para {this.props.moedaB}</h2>
+                    <input type="text" onChange={(event)=>{this.setState({moedaA_valor:event.target.value})}}></input>
+                    <button onClick={this.converter}>Converter</button>
+                    
+                </div>
+                <div className="conversor">
+                    <p class="valor">R$ {this.state.moedaB_valor}</p>
+                </div>
             </div>
         )
     }

@@ -1,9 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
 .App {
-  max-width: 900px;
+  background: #f1eff5;
+  height: 1000px;
+}
+
+.container {
+  max-width: 800px;
   margin: auto;
 }
 
 .titulo-principal {
   text-align: center;
-  color: #0b79d3;
+  color: #68a9df;
+  font-size: 42px;
+  padding: 40px 0;
 }
