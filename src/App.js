@@ -9,8 +9,6 @@ function App() {
       <div className="container">
         <h1 className="titulo-principal">Conversor de Moeda</h1>
         <Conversor moedaA="USD" moedaB="BRL" />
-        <Conversor moedaA="JPY" moedaB="BRL" />
-        <Conversor moedaA="EUR" moedaB="BRL" />
       </div>
     </div>
   );

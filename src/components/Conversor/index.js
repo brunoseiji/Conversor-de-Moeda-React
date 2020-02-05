@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import './Conversor.css';
 
 class Conversor extends Component {
@@ -35,12 +34,18 @@ class Conversor extends Component {
         return(
             <div class="conversor-content">
                 <div className="conversor">
-                    <h2>{this.props.moedaA} para {this.props.moedaB}</h2>
+                    <h2>{this.props.moedaA}</h2>
                     <input type="number" onChange={(event)=>{this.setState({moedaA_valor:event.target.value})}}></input>
                     <button onClick={this.converter}>Converter</button>
                     
                 </div>
+                <button className="inverte">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"></path>
+                    </svg>
+                </button>
                 <div className="conversor">
+                    <h2>{this.props.moedaB}</h2>
                     <p class="valor">R$ {this.state.moedaB_valor}</p>
                 </div>
             </div>

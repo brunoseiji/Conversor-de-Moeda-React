@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 70px;
+    align-items: center;
 }
 
 .conversor {
@@ -44,8 +45,21 @@
 }
 
 .valor {
-    font-size: 42px;
-    margin-top: 22.5%;
+    font-size: 32px;
+}
+
+.inverte {
+    background: #26bf7f;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inverte svg {
+    fill: #fff;
+    height: 30px;
 }
 
 @media only screen and (max-width: 650px) {
