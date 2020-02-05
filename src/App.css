@@ -8,7 +8,8 @@
 
 .App {
   background: #f1eff5;
-  height: 100vh;
+  height: auto;
+  overflow: auto;
 }
 
 .container {
@@ -21,4 +22,10 @@
   color: #68a9df;
   font-size: 42px;
   padding: 40px 0;
+}
+
+@media (max-width: 650px) {
+  .App {
+    
+  }
 }
